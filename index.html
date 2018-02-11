@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Maxima_life</title>
+    <!-- с шрифтами ерунда, лучше скачать их и подколючить) но не все нашел, так что пока винегред по ним. -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> <!-- не смог его найти чистый, пришлось подключать -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,700&amp;subset=latin-ext" rel="stylesheet"> <!-- взамен Intro Regular Alt, не смог найти -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css"> <!-- подключаем анимацию-->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header class="header">
+        <div class="header-top gradient">
+            <div class="header-top__conteiner conteiner">
+
+                <button class="header-top__item btn">
+                    <span class="btn__icon btn__icon-raspis"></span>
+                    <span class="btn__text">Расписание занятий</span>
+                </button>
+
+                <div class="header-top__call header-top__item">
+                    <a href="tel:+73852283028" class="phone-namber">
+                    +7 3852 <span class="phone-namber_big">28-30-28</span>
+                    </a>
+                </div>
+                <div class="header-top__call header-top__item">
+                    <a href="tel:+73852283029" class="phone-namber">
+                        +7 3852 <span class="phone-namber_big">28-30-29</span>
+                    </a>
+                </div>
+
+
+                <button class="header-top__item btn">
+                    <span class="btn__icon btn__icon-call"></span>
+                    <span class="btn__text">Заказать звонок</span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="header-bottom_conteiner conteiner">
+
+                <div class="header-bottom__item">
+                    <div class="header__logo">
+                        <a href="#" class="logo">
+                            <img src="img/logo.png" alt="" class="logo__picture">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header-bottom__item header-bottom__item_flex">
+                    <div class="header__menu">
+
+                        <a href="#" class="header-menu__item">
+                            <div id="icon1" class="header-menu__icon">
+                                <img src="img/barbell.png" alt="card" class="header-menu__img">
+                            </div>
+                            <div class="header-menu__icon_shadow"></div>
+                            <div class="header-menu__text">Наш клуб</div>
+                        </a>
+
+                        <a href="#" class="header-menu__item">
+                            <div id="icon2" class="header-menu__icon">
+                                <img src="img/card.png" alt="card" class="header-menu__img">
+                            </div>
+                            <div class="header-menu__icon_shadow"></div>
+                            <div class="header-menu__text">Клубные карты</div>
+                        </a>
+
+                        <a href="#" class="header-menu__item">
+                            <div id="icon3" class="header-menu__icon">
+                                <img src="img/life.png" alt="life" class="header-menu__img">
+                            </div>
+                            <div class="header-menu__icon_shadow"></div>
+                            <div class="header-menu__text">Максима Life</div>
+                        </a>
+
+                        <a href="#" class="header-menu__item">
+                            <div id="icon4" class="header-menu__icon">
+                                <img src="img/team.png" alt="card" class="header-menu__img">
+                            </div>
+                            <div class="header-menu__icon_shadow"></div>
+                            <div class="header-menu__text">Команда</div>
+                        </a>
+
+                        <a href="#" class="header-menu__item">
+                            <div id="icon5" class="header-menu__icon">
+                                <img src="img/contacts.png" alt="card" class="header-menu__img">
+                            </div>
+                            <div class="header-menu__icon_shadow"></div>
+                            <div class="header-menu__text">Контакты</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+
+<section class="title">
+    <div class="conteiner">
+        <h1 class="title__text">
+            Максима Life
+        </h1>
+    </div>
+</section>
+
+
+<section class="-">
+        <nav class="conteiner menu">
+            <ul class="menu-flex"> <!-- /*"d-flex" и все пункты меню в одну строку*/-->
+                <li class="header-menu__item header-menu__item_all">
+                    Все
+                </li>
+                <li class="header-menu__item">
+                    <a href="#">Новости</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#">Акции</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#">Анонсы</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#">События</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#">Соревнования</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#">Статьи</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#">Истории успеха</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#">Фотоотчеты</a>
+                </li>
+            </ul>
+        </nav>
+</section>
+
+<section class="news">
+    <div class="conteiner news-conteiner__flex">
+        <a class="news-item">
+            <img src="/img/news/Layer%2039.png" alt="Halloween" class="news-item__img">
+            <div class="news-item-info">
+                <div class="news-item-info__date">28.10.2014</div>
+                <h2 class="news-item-info__title">Хэлоуин в Максиме! Долгожданные цены на клубные карты!</h2>
+                <p class="news-item-info__text">Дорогие друзья! 31 октября отмечаем Halloween в фитнес-клубе "Максима"! Клуб открыт до 24:00!</p>
+                <div class="news-item-info__tegs">Новости / события</div>
+            </div>
+        </a>
+        <a class="news-item">
+            <img src="/img/news/Layer%2040.png" alt="Halloween" class="news-item__img">
+            <div class="news-item-info">
+                <div class="news-item-info__date">28.10.2014</div>
+                <h2 class="news-item-info__title">Распродажа спортивного питания!</h2>
+                <p class="news-item-info__text">До 25 января включительно, абонементы на спортивное питание по ценам 2014 года! Для вашей лучшей спортивной формы!</p>
+                <div class="news-item-info__tegs">Акции</div>
+            </div>
+        </a>
+        <a class="news-item">
+            <img src="/img/news/Layer%2041.png" alt="Halloween" class="news-item__img">
+            <div class="news-item-info">
+                <div class="news-item-info__date">28.10.2014</div>
+                <h2 class="news-item-info__title">С 21 по 28 января скидка на персональные трениовки!</h2>
+                <p class="news-item-info__text">С 21 по 28 января скидка 15% на персональные тренировки!</p>
+                <div class="news-item-info__tegs">Новости / события</div>
+            </div>
+        </a>
+        <a class="news-item">
+            <img src="/img/news/Layer%2042.png" alt="Halloween" class="news-item__img">
+            <div class="news-item-info">
+                <div class="news-item-info__date">28.10.2014</div>
+                <h2 class="news-item-info__title">Открытый урок по скалолазанию</h2>
+                <p class="news-item-info__text">Дорогие друзья! 31 октября отмечаем Halloween в фитнес-клубе "Максима"! Клуб открыт до 24:00!</p>
+                <div class="news-item-info__tegs">Новости / события</div>
+            </div>
+        </a>
+        <a class="news-item">
+            <img src="/img/news/Layer%2043.png" alt="Halloween" class="news-item__img">
+            <div class="news-item-info">
+                <div class="news-item-info__date">28.10.2014</div>
+                <h2 class="news-item-info__title">Соревнования по народному жиму в фитнес-клуб "Максима"</h2>
+                <p class="news-item-info__text">Дорогие друзья! 31 октября отмечаем Halloween в фитнес-клубе "Максима"! Клуб открыт до 24:00!</p>
+                <div class="news-item-info__tegs">Акции</div>
+            </div>
+        </a>
+        <a class="news-item">
+            <img src="/img/news/Layer%2044.png" alt="Halloween" class="news-item__img">
+            <div class="news-item-info">
+                <div class="news-item-info__date">28.10.2014</div>
+                <h2 class="news-item-info__title">С 21 по 28 января скидка на персональные трениовки!</h2>
+                <p class="news-item-info__text">Дорогие друзья! 31 октября отмечаем Halloween в фитнес-клубе "Максима"! Клуб открыт до 24:00!</p>
+                <div class="news-item-info__tegs">Новости / события</div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section class="calories-life">
+    <!--<div class="conteiner calories-life__flex">-->
+
+        <div class="calories-life__row conteiner calories-life__flex">  <!-- /*делаем таблицу флексами, идею подстмотрел*/-->
+
+            <div class="calories-life__cell">
+                <div class="calories__human">
+                    <img src="img/calories/human.png" alt="Человек" class="animated mov">
+                </div>
+            </div>
+
+            <div class="calories-life__cell_center">
+
+                    <div class="calories__info">
+                        <div class="calories__text">
+                            <h2 class="calories__info_title">
+                                Пока вы находитесь на сайте,
+                            </h2>
+                            <p class="calories__info_text">человечек уже прошел <span>852</span> м</p>
+                            <p class="calories__info_text">и, между прочим, потратил <span>1125</span> ккал</p>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+    <!--</div>-->
+</section>
+
+<footer class="footer gradient">
+    <div class="footer__conteiner conteiner">
+
+        <div class="footer-info">
+            <h3 class="footer-info_title">©2015, Фитнес-центр «Максима»</h3>
+            <p class="address-text">Барнаул, ул. Лазурная, 7</p>
+            <a href="tel:+73852283028" class="address-text">
+                Отдел продаж: <span>28-30-28</span>
+            </a>
+            <a href="tel:+73852283028" class="address-text">
+                Рецепция: <span>28-30-28</span>
+            </a>
+        </div>
+
+        <div class="footer-info">
+            <h3 class="footer-info_title">Режим работы</h3>
+            <p class="address-text">
+                Пн-Пт: <span>7:00 - 22:00</span>
+            </p>
+            <p class="address-text">
+                Сб <span>8:00 - 22:00</span>
+            </p>
+            <p class="address-text">
+                Вс <span>9:00-21:00</span>
+            </p>
+        </div>
+
+        <div class="footer-info">
+                <ul class="socials">
+                    <li>
+                        <a href="#" class="socials__item socials__item_vk"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="socials__item socials__item_fb"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="socials__item socials__item_od"></a>
+                    </li>
+                </ul>
+            <h3 class="footer-info_small">Правила клуба</h3>
+            <p class="address-text_small">
+                (публичная оферта)
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="js/animatescroll.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+

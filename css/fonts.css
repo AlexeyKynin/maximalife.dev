@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "IntroRegular";
+    src: url("../fonts/Intro/IntroRegular/IntroRegular.eot");
+    src: url("../fonts/Intro/IntroRegular/IntroRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Intro/IntroRegular/IntroRegular.woff") format("woff"),
+    url("../fonts/Intro/IntroRegular/IntroRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "IntroInline";
+    src: url("../fonts/Intro/IntroInline/IntroInline.eot");
+    src: url("../fonts/Intro/IntroInline/IntroInline.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Intro/IntroInline/IntroInline.woff") format("woff"),
+    url("../fonts/Intro/IntroInline/IntroInline.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "IntroCondensedLight";
+    src: url("../fonts/IntroCondensed/IntroCondensedLight/IntroCondensedLight.eot");
+    src: url("../fonts/IntroCondensed/IntroCondensedLight/IntroCondensedLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/IntroCondensed/IntroCondensedLight/IntroCondensedLight.woff") format("woff"),
+    url("../fonts/IntroCondensed/IntroCondensedLight/IntroCondensedLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "IntroCondensedBlack";
+    src: url("../fonts/IntroCondensed/IntroCondensedBlack/IntroCondensedBlack.eot");
+    src: url("../fonts/IntroCondensed/IntroCondensedBlack/IntroCondensedBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/IntroCondensed/IntroCondensedBlack/IntroCondensedBlack.woff") format("woff"),
+    url("../fonts/IntroCondensed/IntroCondensedBlack/IntroCondensedBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

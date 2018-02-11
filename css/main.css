@@ -1,0 +1,458 @@
+/*
+
+*/
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.btn:active,:hover,:focus{  /*пока нашел только это как бороться с синий рамкой*/
+    outline:0;
+    outline-offset:0
+}
+
+.header{
+    font-family: "IntroCondensedBlack", sans-serif;
+    font-weight: normal;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.conteiner{
+    max-width: 978px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/**делю хедер на две части/
+/* ------------------------- Верхняя часть хедера -----------------------------*/
+
+.header-top {
+
+}
+
+.gradient{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e23760+0,2989d8+50,207cca+51,f8597f+100 */
+    background: #e23760; /* Old browsers */
+    background: -moz-linear-gradient(left, #e23760 0%,  #f8597f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #e23760 0%,#f8597f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #e23760 0%,#f8597f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e23760', endColorstr='#f8597f',GradientType=1 ); /* IE6-9 */
+}
+
+.header-top__conteiner{
+    height: 52px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+/* в верхней части хедера, у нас 4-ре элемента, НО растояния между ними не одинаковы, можно использовать "space-between"
+но решил использовать данный метод с "space-around", а первый и последний элементы прижать к левому и правому краям*/
+.header-top__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* возможно перемудрил, НО очень этот метод понравился.*/
+.header-top__item:first-child{
+    margin-right: auto;
+}
+
+.header-top__item:last-child{
+    margin-left: auto;
+}
+
+.btn{
+    background: #ce365a;
+    font-family: "IntroRegular", sans-serif;
+    font-size: 0.75rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 231px;
+    border: 0;
+    text-align: center;
+
+}
+
+.btn__text{
+
+}
+
+.btn__icon{
+    width: 35px;
+    height: 2rem;
+    margin-right: 13px;
+    display: block;
+}
+
+.btn__icon-raspis{
+    background: url('../img/raspis.png') no-repeat center top;
+}
+
+.btn__icon-call{
+    background: url('../img/call.png') no-repeat center top;
+}
+
+.phone-namber{
+    color: #ffa3b9;
+    font-size: 14px;
+}
+
+.phone-namber_big{
+    color: #fff;
+    font-size: 20px;
+}
+
+/*для получения растония между телефонами*/
+.header-top__call{
+    margin: 0 25px;
+}
+
+/* ------------------------- нижняя часть хедера -----------------------------*/
+.header-bottom{
+    box-shadow: 0 5px 14px -4px rgba(0, 0, 0, 0.1);
+}
+
+.header-bottom_conteiner{
+    background: #fff;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom__item{  /*"поиграл" с флекс) как я понял модификатор "header-bottom__item_flex" говорит что меню хедера занимает 2.5 от всей ширины*/
+    flex-grow: 1;
+}
+
+.header-bottom__item_flex{
+    flex-grow: 2.5;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-menu__item{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-menu__img{
+    display: block;
+    margin: 0 auto;
+}
+
+.header-menu__icon{
+    width: 60px;
+    height: 60px;
+    background: #20cee0;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu__icon_pink{
+    background: #ee4971;
+}
+
+.header-menu__icon_shadow{  /*нагло списал, но получается хорошо с тенью*/
+    height: 3px;
+    width: 60px;
+    background: #000;
+    margin-top: 7px;
+    -webkit-filter: blur(5px);
+    border-radius: 50%;
+
+}
+
+.header-menu__text{
+    margin-top: 15px;
+    color: #5b5b5b;
+
+}
+
+/* ------------------------- заголовок -----------------------------*/
+
+.title__text{
+    margin: 60px 0 25px 0;
+}
+
+
+
+/* ------------------------- Меню -----------------------------*/
+
+.menu{
+
+}
+
+.menu-flex{
+    border-style: solid none;
+    border-color: #e5f0f2 #fff;
+    border-width: 3px 0px;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-menu__item {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.header-menu__item_all{
+    color: #b4d3d6;
+}
+
+.header-menu__item a {
+    color: #5b5b5b;
+}
+
+.header-menu__item a:hover{
+    color: #1bbbd9;
+}
+
+/* ------------------------- Новости -----------------------------*/
+.news{
+    margin-bottom: 40px;
+}
+
+.news-conteiner__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-item{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+
+    height: 335px;
+    width: 289px;
+    cursor: pointer;
+    border: 5px solid #d3eff2;
+    margin: 26px 0 5px 0;
+}
+
+.news-item:hover{
+    border: 5px solid #1bbbd9;
+}
+
+.news-item-info{
+    margin: 20px 20px;
+    height: 190px;
+
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-item-info__title{
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.news-item-info__date{
+    font-size: 11px;
+}
+
+.news-item-info__text{
+    line-height: 1.7em;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #454545;
+    margin: 0;
+}
+
+.news-item-info__tegs{
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.news-item-info__tegs{
+    color: #2ac0dc;
+    text-transform: lowercase;
+}
+
+
+/* ------------------------- Человечек -----------------------------*/
+
+.calories-life{
+    background: url(../img/calories/back.png) no-repeat center top;
+    margin-top: -70px;  /*может конечно картинку обрезать?? */
+}
+
+.calories-life__flex{
+    height: 395px;
+    align-items: flex-end;
+}
+
+.calories__info{
+    width: 360px;
+    height: 140px;
+    background: #fff;
+    box-shadow: 0 0 0 5px #d3eff2,
+                0 0 0 13px #fff;
+    border-radius: 1px;
+    margin-bottom: 78px;
+
+    display: flex;
+}
+
+.calories-life__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: safe;
+}
+
+.calories-life__cell{
+    width: 32%;
+}
+
+.calories__human{
+    margin-bottom: -12px;
+}
+
+/*.fadeInRight{*/
+    /*animation-name: fadeInRight;*/
+/*}*/
+
+.calories-life__cell_center{
+    width: 68%;
+}
+
+.calories__text{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 35px;
+}
+
+.calories__info_title{
+    font-size: 1.25rem;
+}
+
+.calories__info_text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.87em;
+    color: #464343;
+    line-height: 1.3em;
+}
+
+.calories__info_text span{
+    font-size: 1.25rem;
+    color: #1bbbd9;
+    font-weight: 700;
+}
+
+
+/* ------------------------- Footer -----------------------------*/
+.footer__conteiner{
+    height: 200px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info{
+    align-self: center;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.address-text{
+    color: #fff;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 30px 0;
+}
+
+.socials__item {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: block;
+    margin-left: 15px;
+
+}
+
+.socials__item_vk{
+    background: #e33861 url(../img/social/vk.png) no-repeat center center;
+    margin-left: 0;
+}
+
+.socials__item_fb{
+    background: #e33861 url(../img/social/fb.png) no-repeat center center;
+}
+
+.socials__item_od {
+    background: #e33861 url(../img/social/od.png) no-repeat center center;
+}
+
+.footer-info_title{
+    font-size: 1.12rem;
+    /*line-height: 1.5em;*/
+    margin-bottom: 20px;
+}
+
+.address-text{
+    line-height: 1.7em;
+}
+
+.address-text span{
+    font-weight: 700;
+}
+
+.footer-info_small{
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.address-text_small{
+    font-size: 0.62rem;
+}
